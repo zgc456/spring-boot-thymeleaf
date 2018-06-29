@@ -1,0 +1,19 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+111
+<p th:text="${index}"></p>
+<!-- 遍历一维集合 -->
+<p th:each="listS:${lists}">
+        <span th:text="${listS}"></span>
+</p>
+<!-- 遍历泛型集合 -->
+<p th:each="listEntity1:${listEntity}">
+    <span th:text="${listEntity1.getName()}"></span>
+</p>
+</body>
+</html>
